@@ -1,0 +1,59 @@
+{
+    "productos": [
+      {
+        "name": "Super Bros Light",
+        "price": "179.00",
+        "image": "https://m.media-amazon.com/images/I/61VONFAiqgL._AC_SL1500_.jpg",
+        "id": "1"
+      },
+      {
+        "name": "Grogu Tamagotchi",
+        "price": "589.00",
+        "image": "https://m.media-amazon.com/images/I/71w3Ul5QzzL._AC_SL1500_.jpg",
+        "id": "2"
+      },
+      {
+        "name": "Zoro Funko Pop",
+        "price": "549.00",
+        "image": "https://m.media-amazon.com/images/I/61O+Mnkp+WL._AC_SL1188_.jpg",
+        "id": "3"
+      },
+      {
+        "name": "Back to the Sox",
+        "price": "345.00",
+        "image": "https://m.media-amazon.com/images/I/81uqfx+5q0L._AC_SX679_.jpg",
+        "id": "4"
+      },
+      {
+        "name": "Batmobile 1966",
+        "price": "999.00",
+        "image": "https://m.media-amazon.com/images/I/61U7vFCIaLL._AC_SL1500_.jpg",
+        "id": "5"
+      },
+      {
+        "name": "Dungeons & Dragons",
+        "price": "364.00",
+        "image": "https://m.media-amazon.com/images/I/71HNpjfxcjL._AC_SL1500_.jpg",
+        "id": "6"
+      },
+      {
+        "name": "Star Wars Sabre",
+        "price": "879.00",
+        "image": "https://m.media-amazon.com/images/I/61ouEN77qRL._AC_SL1500_.jpg",
+        "id": "7"
+      },
+      {
+        "name": "ST Enterprise",
+        "price": "675.00",
+        "image": "https://m.media-amazon.com/images/I/71-NGSYCivL._AC_SL1500_.jpg",
+        "id": "8"
+      },
+      {
+        "name": "Pickle Rick Jar",
+        "price": "662.00",
+        "image": "https://m.media-amazon.com/images/I/71zaLMdx0wL._AC_SX522_.jpg",
+        "id": "9"
+      }
+      
+    ]
+  }

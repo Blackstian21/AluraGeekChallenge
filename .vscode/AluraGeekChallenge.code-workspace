@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../AluraGeekSOG/database"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "AluraGeekChallenge",
+		"liveServer.settings.port": 5501
+	}
+}

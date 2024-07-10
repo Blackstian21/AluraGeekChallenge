@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>AluraGeekSOG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="./imagenes/Logogeek.svg">
+        </div>
+    </header>
+   
+    <main>
+        <section class="productos-list" id="productos">
+            <h1>Productos Geek:</h1>
+            <div class="productos-grid" id="productos-grid"></div>
+        </section>
+        <aside class="nuevo-producto">
+            <h2 class="padre" style="font-family: 'Press Start 2P'; text-align: left; font-size: 15px">Agregar Producto</h2>
+            <form id="nuevoProductoForm">
+                <input type="text" id="nombre" placeholder="Nombre..." required; style="font-family: IBM Plex Mono; font-size: 12px;"/>
+                <input type="number" id="precio" placeholder="Precio..." required; style="font-family: IBM Plex Mono; font-size: 12px;"/>
+                <input type="text" id="imagenUrl" placeholder="URL de la imagen..." required; style="font-family: IBM Plex Mono; font-size: 12px;"/>
+                <button type="submit" style="font-family: 'Press Start 2P';">Agregar Producto</button>
+                <button type="button" id="borrarCampos" style="font-family: 'Press Start 2P';">Borrar</button>
+            </form>
+        </aside>
+    </main>
+    <footer class="footer">
+        <img src="./imagenes/Logogeek.svg" style="width: 200px; float: center; padding: 5px;" alt="Logogeek">   
+        <p style="font-family: IBM Plex Mono; font-size: 12px;">Sebastián Ortiz-2024-Alura Latam • ONE-Oracle Next Education</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

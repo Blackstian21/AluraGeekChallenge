@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "../../AluraGeekSOG/database"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501
+	}
+}
