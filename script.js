@@ -2,29 +2,38 @@ document.addEventListener('DOMContentLoaded', () => {
     const productosGrid = document.getElementById('productos-grid');
     const nuevoProductoForm = document.getElementById('nuevoProductoForm');
     const borrarCamposBtn = document.getElementById('borrarCampos');
+
+    fetch('database/db.json')
+  .then(response => response.json()) 
+  .then(data => {
+    localStorage.setItem('productos', JSON.stringify(data));
+  })
+  .catch(error => console.error('Error al obtener el archivo JSON:', error));
+
    
     window.eliminarProducto = (index) => {
+        console.log(index);
         let productosList = JSON.parse(localStorage.getItem('productos')) || [];
-        productosList.splice(index, 1);
+        productosList.productos.splice(index, 1);
         localStorage.setItem('productos', JSON.stringify(productosList));
         renderProductos();
-        toggle(productosList);
     };
 
         const renderProductos = () => {
         productosGrid.innerHTML = '';
 
         let productosList = JSON.parse(localStorage.getItem('productos')) || [];
+            console.log(productosList);
 
-        productosList.forEach((producto, index) => {
-            const precio = parseFloat(producto.precio);
+            productosList.productos.forEach((producto, index) => {
+            const precio = parseFloat(producto.price);
 
             const productoCard = document.createElement('div');
             productoCard.classList.add('card');
             productoCard.innerHTML = `
-                <img src="${producto.imagenUrl}" alt="${producto.nombre}">
+                <img src="${producto.image}" alt="${producto.name}">
                 <div class="card-container--info">
-                    <p>${producto.nombre}</p>
+                    <p>${producto.name}</p>
                     <div class="card-container--value">
                         <p>$${precio.toFixed(2)}</p>
                         <img src="./imagenes/trashIcon.svg" alt="Eliminar" onclick="eliminarProducto(${index})">
@@ -33,7 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
             productosGrid.appendChild(productoCard);
         });
-        toggle(productosList);
     };
 
     nuevoProductoForm.addEventListener('submit', (event) => {
@@ -55,8 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('productos', JSON.stringify(productosList));
 
         renderProductos();
-        toggle(productosList);
-
         nuevoProductoForm.reset();
     });
 
@@ -65,5 +71,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     renderProductos();
-    toggle(JSON.parse(localStorage.getItem('productos')) || []);
 });
